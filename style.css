@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.box1,.box2,.box3,.box4{
+width: 25%;
+height: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: grayscale(100%);
+position: relative;
+overflow: hidden;
+}
+
+.box1{  
+background-image: url(./images/1.jpg);
+}
+
+.box2 {
+  background-image: url(./images/2.jpg);
+  }
+
+.box3 {
+  background-image: url(./images/3.jpg);
+  }
+
+.box4 {
+  background-image: url(./images/4.jpg);
+  }
+
+.box1::after{
+  content: "THE BAT MAN";
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  font-size: 5vw;
+ display: none;
+}
+
+.box2::after {
+  content: "CAPTAIN AMERICA";
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  font-size: 5vw;
+  display: none;
+}
+
+.box3::after {
+  content: "IRON MAN";
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  color: #fff;
+  font-size: 5vw;
+  display: none;
+}
+
+.box4::after {
+  content: "SPIDER MAN";
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  color: #fff;
+  font-size: 5vw;
+  display: none;
+}
+
+  /* Hover */
+.box1:hover::after {
+
+  display:block ;
+}
+.box2:hover::after {
+
+  display: block;
+}
+
+.box3:hover::after{
+  display: block;
+}
+
+.box4:hover::after {
+  display: block;
+}
+
+  .box1:hover {
+    filter: grayscale(0%);
+  }
+  
+  .box2:hover {
+    filter: grayscale(0%);
+  }
+  
+  .box3:hover {
+    filter: grayscale(0%);
+   
+    
+  }
+  
+  .box4:hover {
+    filter: grayscale(0%);
+  }
